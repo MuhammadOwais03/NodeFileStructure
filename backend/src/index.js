@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import connection from "./db/dbConnection.js";
 import { app } from "./app.js";
 
-const ipAddress = "192.168.1.9";
+// const ipAddress = "192.168.1.9";
 
 // Load environment variables
 dotenv.config({
@@ -16,8 +16,8 @@ const port = process.env.PORT || 3000;
 
 connection()
     .then(() => {
-        app.listen(port, ipAddress, () => {
-            console.log(`Server running at http://${ipAddress}:${port}/`);
+        app.listen(port, () => {
+            console.log(`Server running at http://localhost:${port}/`);
         });
 
 

@@ -1,2 +1,2 @@
-export const DB_NAME = "EduTrackDB"
+export const DB_NAME = "Authentication"
  
