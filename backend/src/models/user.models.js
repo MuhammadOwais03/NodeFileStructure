@@ -43,6 +43,11 @@ const UserSchema = new Schema ({
     refreshToken: {
         type: 'String',
         default: null
+    },
+
+    userRole: {
+        type: 'String',
+        required: true
     }
     
 })

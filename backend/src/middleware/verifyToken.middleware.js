@@ -27,7 +27,6 @@ const verifyToken = asyncHandler(async (req, res, next) => {
         const options = {
             httpOnly: true,
             secure: false,
-            sameSite: 'Strict' // Optional: Protect against CSRF
         };
 
         res.cookie('accessToken', newAccessToken, options); 
