@@ -5,12 +5,7 @@ import bcrypt from 'bcrypt';
 const { Schema } = mongoose;
 
 const UserSchema = new Schema ({
-    UserSchemaname: {
-        type:'String',
-        required: true,
-        unique: true,
-    },
-    
+
     email: {
         type:'String',
         required: true,
